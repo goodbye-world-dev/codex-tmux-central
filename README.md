@@ -10,6 +10,12 @@ It uses tmux plus official Codex lifecycle hooks. There is no background service
 
 ![Codex Tmux Central workflow demo](assets/demo.gif)
 
+### Real Codex CLI session
+
+The terminal content below comes directly from a real Codex CLI pane captured through tmux; only the outer window chrome is rendered.
+
+![Real Codex CLI session in Codex Tmux Central](assets/real-codex-session.png)
+
 ## What it provides
 
 - one persistent `codex` tmux session;
