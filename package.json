@@ -1,0 +1,9 @@
+{
+  "name": "codex-tmux-central",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "bun build install.ts src/tmux-status.ts --target=bun --outdir .build-check"
+  }
+}
