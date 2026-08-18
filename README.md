@@ -8,6 +8,8 @@ A small terminal dashboard for running multiple Codex CLI sessions in one stable
 
 It uses tmux plus official Codex lifecycle hooks. There is no background service, telemetry, or hosted dependency.
 
+![Codex Tmux Central workflow demo](assets/demo.gif)
+
 ## What it provides
 
 - one persistent `codex` tmux session;
