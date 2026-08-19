@@ -70,14 +70,14 @@ try {
   switch (event) {
     case "SessionStart":
       state.agents = {};
-      status = "🟢 WAIT";
+      status = "🟢 IDLE";
       break;
     case "UserPromptSubmit":
       state.agents = {};
       status = "🟡 WORK";
       break;
     case "PermissionRequest":
-      status = "🔴 INPUT";
+      status = "#[blink]🔴 INPUT#[noblink]";
       break;
     case "SubagentStart":
       if (input.agent_id) {
@@ -93,7 +93,7 @@ try {
       break;
     case "Stop":
       state.agents = {};
-      status = "🟢 WAIT";
+      status = "🟢 IDLE";
       break;
     case "SessionEnd":
       clearOptions = true;

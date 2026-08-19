@@ -15,7 +15,7 @@ It uses tmux plus official Codex lifecycle hooks. There is no background service
 - one persistent `codex` tmux session;
 - a launcher shell at `0:codex-central`;
 - one tmux window per Codex session and project;
-- `🟡 WORK`, `🟢 WAIT`, and `🔴 INPUT` status labels;
+- `🟡 WORK`, `🟢 IDLE`, and blinking `🔴 INPUT` status labels;
 - active subagent count and type, such as `🤖1 reviewer`;
 - automatic project-directory window names;
 - mouse scrolling with 50,000 lines of history;
@@ -117,8 +117,8 @@ When you exit Codex with `Ctrl+C`, the project window remains open at its shell 
 | Label | Meaning |
 | --- | --- |
 | `🟡 WORK` | Codex is processing a turn |
-| `🟢 WAIT` | Codex finished and is waiting for input |
-| `🔴 INPUT` | Codex is requesting approval |
+| `🟢 IDLE` | Codex is not processing a turn |
+| `🔴 INPUT` | Codex is requesting approval; the label blinks when the terminal supports tmux's `blink` attribute |
 | `🤖N` | N subagents are active |
 
 ## Configuration
